@@ -6,13 +6,12 @@ import CustomSpinner from '../../components/customSpinner';
 
 const RecipeDetail = () => {
     const dispatch = useDispatch();
-    const { id: recipeId } = useParams();
     const { loading, profile: recipe } = useSelector((store) => store.recipes)
     const { state } = useLocation();
 
     useEffect(() => {
         dispatch(getRecipe(state.url));
-    }, [dispatch, recipeId]);
+    }, [dispatch]);
 
     const {
         label,

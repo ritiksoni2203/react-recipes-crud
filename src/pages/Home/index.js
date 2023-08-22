@@ -20,6 +20,10 @@ const Home = () => {
 
     return (
         <div className="home-container">
+            <p>
+                Enter a what you have eaten, like "coffee and croissant" or "chicken enchilada" to see how it works. We have accurate data tens of thousands of foods, including international dishes.
+            </p>
+            <p className='keywords'>Keywords</p>
             <div className="search-container">
                 <div className="search-icon" onClick={handleSearch}>
                     <FaSearch />
@@ -27,7 +31,7 @@ const Home = () => {
                 <input
                     className="search-input"
                     type="text"
-                    placeholder="Search for a recipe..."
+                    placeholder="Type one or more keywords"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                 />

@@ -13,10 +13,11 @@ code {
 }
 
 .home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
+}
+
+.keywords {
+  font-weight: bold;
 }
 
 .search-container {
@@ -85,7 +86,7 @@ code {
 .search-icon {
   position: absolute;
   right: 0;
-  padding: 9px 20px;
+  padding: 10px 20px;
   top: 50%;
   transform: translateY(-50%);
   color: #888;
@@ -211,4 +212,8 @@ code {
 .ingredients h3 {
   border-bottom: 1px solid #efefef;
   padding-bottom: 10px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

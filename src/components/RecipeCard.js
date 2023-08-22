@@ -21,7 +21,7 @@ const RecipeCard = ({ recipe }) => {
         })
     }
     return (
-        <div className="recipe-card" onClick={handleRoute}>
+        <div className="recipe-card cursor-pointer" onClick={handleRoute}>
             <div className='recipes-card-flex'>
                 <img src={image} alt='recipe' height={300} width={300} />
                 <div>
